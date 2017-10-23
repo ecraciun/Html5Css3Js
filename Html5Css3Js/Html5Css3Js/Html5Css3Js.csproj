@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\3\" />
+    <Folder Include="wwwroot\css\1\" />
+    <Folder Include="wwwroot\css\2\" />
+    <Folder Include="wwwroot\css\3\" />
+    <Folder Include="wwwroot\js\1\" />
+    <Folder Include="wwwroot\js\2\" />
+    <Folder Include="wwwroot\2\" />
+    <Folder Include="wwwroot\js\3\" />
+  </ItemGroup>
+</Project>
