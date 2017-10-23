@@ -10,12 +10,5 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\3\" />
-    <Folder Include="wwwroot\css\1\" />
-    <Folder Include="wwwroot\css\2\" />
-    <Folder Include="wwwroot\css\3\" />
-    <Folder Include="wwwroot\js\1\" />
-    <Folder Include="wwwroot\js\2\" />
-    <Folder Include="wwwroot\2\" />
-    <Folder Include="wwwroot\js\3\" />
   </ItemGroup>
 </Project>
