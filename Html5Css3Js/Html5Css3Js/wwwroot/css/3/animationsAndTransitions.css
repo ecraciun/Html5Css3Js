@@ -1,2 +1,117 @@
-﻿body {
+﻿/* Transitions */
+
+div#transitionTarget {
+    width: 400px;
+    height: 60px;
+    background-color: yellow;
+    /*transition: width 2s, height 2s, font-size 2s, background-color 3750ms;*/
+    transition-property: width, height, font-size, background-color;
+    transition-duration: 2s, 2s, 2s, 3750ms;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+}
+    div#transitionTarget:hover {
+        width: 600px;
+        height: 80px;
+        font-size: large;
+        background-color: red;
+    }
+
+/*
+    transition-property: Target property;
+    transition-duration: duration;
+    transition-timing-function: defines how transition speed varies; Possible values: "linear", "ease", "ease-in", "ease-out", and "ease-in-out"
+    transition-delay: delay before transition starts;
+    transition: shorthand notation for all properties;
+*/
+
+/* Transformations */
+
+#transformMe {
+    font-family: verdana, arial;
+    width: 300px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 5px;
+    transform: translate(160px, 200px) skew(45deg) rotate(10deg) scale(1.3);
+}
+
+#parent {
+    perspective: 300px;
+    perspective-origin: -100px -50px;
+}
+#child1 {
+    background-color: orange;
+    position: absolute;
+    transform-origin: 0px 0px;
+    transform: rotateY(30deg);
+}
+#child2 {
+    background-color: orange;
+    position: absolute;
+    transform-origin: 0px 0px;
+    transform: rotateY(30deg) translate(250px);
+}
+
+#container {
+    transition: transform 3s;
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 300px;
+}
+#container:hover {
+    transform: rotate(90deg);
+}
+
+/* Animations */
+@keyframes ballmovement {
+    0% {
+        left: 0px;
+        top: 0px;
+        background-color: yellow;
+    }
+    33% {
+        left: 100px;
+        top: 160px;
+    }
+    66% {
+        left: 200px;
+        top: 0px;
+    }
+    100% {
+        left: 300px;
+        top: 160px;
+        background-color: purple;
+    }
+}
+
+#ball.animate {
+    animation-name: ballmovement;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+#pooltable {
+    width: 340px;
+    height: 200px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background: green;
+}
+
+#pooltable.animate {
+    background: blue;
+}
+
+#ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: white;
+    position: relative;
+    left: 0px;
+    top: 0px;
 }

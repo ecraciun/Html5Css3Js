@@ -1,0 +1,16 @@
+﻿CACHE MANIFEST
+# version 3.0
+# Explicit cache declarations
+CACHE:
+/css/3/cached.css
+/lib/jquery/dist/jquery.js
+
+
+# The following should not be cached
+NETWORK:
+/js/3/storage.js
+/lib/jquery-cookie/jquery.cookie.js
+
+# Alternative files
+FALLBACK:
+/images/banner1.svg
