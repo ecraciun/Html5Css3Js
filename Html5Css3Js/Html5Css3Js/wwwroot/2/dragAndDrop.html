@@ -2,9 +2,40 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" type="text/css" href="../css/2/dragAndDrop.css" />
 </head>
 <body>
+    <h1>Drag and Drop</h1>
 
+<div id="container">
+    <div id="hole1" class="hole">
+        <div id="item1" draggable="true" class="item">1</div>
+    </div>
+    <div id="hole2" class="hole">
+        <div id="item2" draggable="true" class="item">2</div>
+    </div>
+    <div id="hole3" class="hole">
+        <div id="item3" draggable="true" class="item">3</div>
+    </div>
+    <div id="hole4" class="hole"></div>
+</div>
+    
+    
+    
+    
+<p>What cars do you like?</p>
+<ul id="carList">
+    <li draggable="true" data-value="car,Chevrolet">Chevrolet</li>
+    <li draggable="true" data-value="car,Ford">Ford</li>
+    <li draggable="true" data-value="car,BMW">BMW</li>
+</ul>
+<p>Drop your favorite cars below:</p>
+<ul id="favoriteCars" style="min-height:100px;background-color:yellow;">
+</ul>
+
+
+<script type="text/javascript" src="../lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../js/2/dragAndDrop.js"> </script>
 </body>
 </html>
