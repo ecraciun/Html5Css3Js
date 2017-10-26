@@ -52,7 +52,38 @@ div {
     border: 2px solid black;
     width: 150px;
     height : 150px;
+    /*display:inline;*/
+    /*display:inline-block;*/
+    /*display:flex;*/
+    display:table-cell;
 }
 div:nth-child(odd) {
     font-size: 4rem;
+}
+
+/* Pseudo-elements: */
+p::first-letter {
+    color: deeppink;
+    font-size:x-large;
+    font-weight:bold;
+} 
+
+/* Pseudo-classes */
+a:link{
+    background-color:gray;
+}
+
+a:visited{
+    background-color:greenyellow;
+}
+
+a:focus{
+    background-color:red;
+}
+
+a:hover{
+    background-color:blue;
+}
+a:active{
+    background-color:yellow;
 }
