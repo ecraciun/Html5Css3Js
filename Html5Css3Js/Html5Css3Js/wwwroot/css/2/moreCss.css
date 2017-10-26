@@ -1,2 +1,58 @@
-﻿body {
+﻿
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('Roboto-Regular-webfont.ttf') format('truetype');
+    font-stretch: normal; /* Default*/
+    font-weight: normal; /* Default*/
+    font-style: normal; /* Default*/
+    unicode-range: U+0-10FFFF; /* Default*/
+}
+p {
+    font-family : RobotoRegular, "Segoe UI", Arial;
+    font-size: 14px;
+}
+
+
+/*div {
+    border: 2px solid red;
+    outline: 2px solid green;
+    outline-offset: 5px;
+}
+
+div {
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: green;
+    outline-offset: 5px;
+
+    border-radius: 2em; 
+    border-radius: 5px/10px;
+}*/
+
+section {
+    text-align: justify;
+    column-count : 3;
+    column-gap : 5rem;
+    column-rule : 1px solid black;
+}
+
+body {
+    text-align: center;
+}
+article {
+    padding: 10px;
+    border: 2px solid red;
+}
+div {
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    width: 150px;
+    height : 150px;
+}
+div:nth-child(odd) {
+    font-size: 4rem;
 }
