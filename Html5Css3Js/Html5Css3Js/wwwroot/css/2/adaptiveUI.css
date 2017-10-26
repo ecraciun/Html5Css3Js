@@ -1,2 +1,25 @@
-﻿body {
+﻿@media print, projection {
+    header, footer {
+        display: none;
+    }
 }
+
+
+@media screen and (max-width: 480px) {
+    p {
+        background: red;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+    p {
+        background: green;
+    }
+}
+@media (min-width: 1200px) {
+    p {
+        background: aqua;
+    }
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
