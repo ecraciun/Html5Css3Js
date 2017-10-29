@@ -1,10 +1,191 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <title>Semantics</title>
+    <style type="text/css">
+        img{
+            width: 25%;
+            height:25%;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/1/semantics.css" />        
 </head>
 <body>
+    <header>
+        <h1 style="background-color:lightblue">Contoso Ltd.</h1>
+        <img src="/images/banner1.svg" alt="Company Logo" id="firstBanner" />
+        <p>Other supplementary information</p>
+    </header>
 
+    <p>Alt header</p>
+
+    <header id="secondHeader">
+        <hgroup>
+            <h1>Primary Header</h1>
+            <h2>seconday header</h2>
+        </hgroup>
+        <img src="/images/banner2.svg" alt="Company Logo" />
+        <p>Other supplementary information</p>
+    </header>
+
+
+    <nav>
+        <ul class="navList">
+            <li><a href="index.html">Basic structure</a></li>
+            <li><a href="hyperlinks.html">Hyperlinks</a></li>
+        </ul>
+    </nav>
+
+    <div id="mainArea">
+
+        <article>
+            <h1>Blog of the day</h1>
+            <p>
+                This is today's blog post. La, la, la, la, la,
+                la, la, la, la, la, la
+            </p>
+            <aside>
+                <!-- Inside the article, so it's related to the article -->
+                <h1>What's this all about?</h1>
+                <p>This article talks about la, la...</p>
+            </aside>
+        </article>
+
+        <article>
+            <h1>PolyWannaWidget Review</h1>
+            The <b>PolyWannaWidget</b> is the best product
+            to use for creating crackers from nothing
+            other than a hammer.
+        </article>
+
+        <article>
+
+            <div>
+                <h1>This will not be red</h1>
+            </div>
+
+            <p>
+                You need to turn <strong>right</strong>.
+            </p>
+
+            <p>
+                I <em>am</em> a developer.
+            </p>
+
+            <p>
+                The
+                <abbr title='radio detection and ranging'>radar</abbr>
+                must be repaired
+                <abbr title='as soon as possible'>ASAP</abbr>
+                by Contoso,
+                <abbr title='Incorporated'>Inc.</abbr>
+            </p>
+        </article>
+
+        <article>
+            <blockquote>
+                O Romeo, Romeo, wherefore art thou Romeo?<br />
+                Deny thy father and refuse thy name;<br />
+                Or if thou wilt not, be but sworn my love<br />
+                And I'll no longer be a Capulet.<br />
+                <footer>
+                    <p>
+                        by William Shakespeare,
+                        <cite>Romeo and Juliet</cite> Act 2, scene 2
+                    </p>
+                </footer>
+            </blockquote>
+
+            <p>
+                John said to the audience <q>
+                    Sally was crying when she
+                    shouted <q>Leave me alone</q> and then she ran away.
+                </q>
+            </p>
+        </article>
+
+        <article>
+            <pre> 
+            <code> 
+            sayHello('Mom'); 
+            function sayHello(name)  
+            { 
+                alert('Hello ' + name + '!'); 
+            } 
+        </code> 
+    </pre>
+
+            <samp class="keepWhiteSpace">
+                Hello Mom!
+            </samp>
+
+            <p>
+                The resistance
+                <var>r</var>
+                of a piece of wire is equal to the voltage
+                <var>v</var>
+                divided by the current
+                <var>i</var>.
+            </p>
+        </article>
+
+        <article></article>
+
+        <article>
+            <figure id="figure1">
+                <img src="/images/banner3.svg" alt="peanut butter and jelly requirements" />
+                <figcaption>Figure 1 The PB&J sandwich requirements.</figcaption>
+            </figure>
+
+
+            <div role="main">
+                <details>
+                    <summary>Make a peanut butter and jelly sandwich</summary>
+                    <p>
+                        The peanut butter and jelly
+                        <abbr title="peanut butter and jelly">PB&J</abbr>
+                        sandwich has been a staple food of many American families
+                        due to its health benefits, its cost, and its
+                        wonderful flavor.
+                    </p>
+                    <p>
+                        When assembling a peanut butter and jelly sandwich,
+                        you need to gather all the required materials as
+                        shown in <a href="#figure1">Figure 1</a>.
+                    </p>
+                    <figure id="figure2">
+                        <img src="/images/banner4.svg" alt="peanut butter and jelly requirements" />
+                        <figcaption>The PB&J sandwich requirements.</figcaption>
+                    </figure>
+                </details>
+            </div>
+
+        </article>
+    </div>
+
+    <aside>
+        <!-- Outside the article, so it's related to the sites -->
+        <h2>Blog Advertising</h2>
+        <p>You too can have your own blog...</p>
+    </aside>
+
+
+    <footer>
+        <ul>
+            <li>Copyright (C) 2012, Contoso Ltd., All rights reserved</li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <address>
+            Contoso, Inc.
+            <a href="email:WebMaster@Contoso.com">
+                WebMaster@Contoso.com
+            </a>
+        </address>
+    </footer>
+
+
+    <script type="text/javascript" src="../lib/jquery/dist/jquery.js"></script>
+    <script src="/js/1/basicJS.js"></script>
+    <script src="/js/1/dom.js"></script>
 </body>
 </html>

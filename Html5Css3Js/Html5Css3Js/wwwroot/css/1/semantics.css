@@ -1,0 +1,63 @@
+﻿h2{
+    color: green;
+    opacity: 0.6;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+#secondHeader{
+    border: 1px solid black;
+}
+
+nav ul.navList{
+    list-style:square;
+}
+
+article > h1{
+    color: red;
+}
+
+header, footer{
+    border:1px dashed black;
+}
+
+h1 + h2{
+    font-style: italic;
+}
+
+div ~ p{
+    font-weight: bold;
+}
+
+div[role="main"]{
+    background-color: pink;
+}
+
+/*
+    How do styles cascade?
+It’s important to understand how styles are resolved by the browser when style rules conflict. 
+The following is the order of precedence the browser uses to calculate the effective style of 
+an element.
+
+1.  Important  The browser must determine whether the “!important” modifier has been 
+used. This has the highest priority, so if the “!important” modifier is found, it takes 
+precedence over the specificity or textual order.
+
+2.  Specificity   The browser determines which rule is most specific and, if the browser 
+can determine which rule is most specific, there is no need to examine the textual 
+order.
+
+3.  Textual Order  The browser determines the textual order of the style rules where the 
+last style rule in textual order has precedence over prior style rules.
+Style rules can be defined in several style sheets, and it’s important to understand these 
+style sheets, especially their relationship to the textual order. The following list describes the 
+evaluation order of the various style sheets.
+
+1.  Browser’s built-in style sheet
+2.  User’s normal declarations in the user style sheet
+3.  Author’s normal declarations in the author style sheet
+4.  Author’s important declarations in the author style sheet
+5.  User’s important declarations in the user style sheet
+*/

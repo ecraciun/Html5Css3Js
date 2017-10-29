@@ -1,2 +1,6 @@
-﻿body {
+﻿div{
+    padding: 64px;
+    background-color: lightblue;
+    border: 8px solid black;
+    margin: 128px;
 }

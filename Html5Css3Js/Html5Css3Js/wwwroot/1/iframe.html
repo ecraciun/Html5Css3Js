@@ -2,9 +2,18 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>iframe</title>
 </head>
 <body>
+    <h2>my page</h2>
+    <!--sandbox-->
+    <iframe src="iframeContent.html" name="myIframe"></iframe>
 
+    <ul>
+        <li><a target="myIframe" href="index.html">MY IFRAME</a></li>
+    </ul>
+
+    <iframe sandbox="allow-same-origin allow-forms allow-scripts"
+            src="iframeContent.html" seamless="seamless"></iframe>
 </body>
 </html>
